@@ -13,19 +13,31 @@ export default function Hero() {
     >
       <Box
         sx={{
-          height: "90vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          mt: 5,
         }}
       >
         <Typography
           variant='h1'
           sx={{
             textAlign: "center",
-            fontSize: "20rem",
+            fontSize: "21rem",
             fontFamily: "fantasy, sans-serif",
+            transform: "scaleY(1.5)",
           }}
         >
           Jason Lapina
         </Typography>
+        <Box
+          component='img'
+          src='/assets/hero.png'
+          sx={{
+            transform: "translateY(-25%) scale(1.2)",
+          }}
+        />
       </Box>
     </Box>
   );
