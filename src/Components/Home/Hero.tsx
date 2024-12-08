@@ -17,16 +17,18 @@ export default function Hero() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          mt: 5,
+          mt: 20,
         }}
       >
         <Typography
           variant='h1'
           sx={{
             textAlign: "center",
-            fontSize: "21rem",
             fontFamily: "fantasy, sans-serif",
             transform: "scaleY(1.5)",
+            fontSize: "18vw",
+            lineHeight: "14vw",
+            cursor: "default",
           }}
         >
           Jason Lapina
