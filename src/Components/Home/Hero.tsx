@@ -3,14 +3,7 @@ import { Box, Typography } from "@mui/material";
 export default function Hero() {
   // inspo https://www.cosmos.studio/ (hero only)
   return (
-    <Box
-      component='section'
-      sx={{
-        height: "100vh",
-        width: "100vw",
-        pt: 10,
-      }}
-    >
+    <Box component='section'>
       <Box
         sx={{
           display: "flex",
@@ -24,11 +17,14 @@ export default function Hero() {
           variant='h1'
           sx={{
             textAlign: "center",
-            fontFamily: "fantasy, sans-serif",
-            transform: "scaleY(1.5)",
-            fontSize: "18vw",
-            lineHeight: "14vw",
+            fontFamily: "Anton SC, sans-serif",
             cursor: "default",
+            fontSize: "19vw",
+            WebkitTextStroke: "4px white",
+            color: "transparent",
+            transform: "scaleY(1.5)",
+            zIndex: -1,
+            textShadow: (theme) => `16px 8px ${theme.palette.primary.main}`,
           }}
         >
           Jason Lapina
@@ -37,7 +33,9 @@ export default function Hero() {
           component='img'
           src='/assets/hero.png'
           sx={{
-            transform: "translateY(-25%) scale(1.2)",
+            position: "absolute",
+            bottom: "0",
+            width: "30vw",
           }}
         />
       </Box>
